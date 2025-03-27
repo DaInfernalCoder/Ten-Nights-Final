@@ -1,0 +1,129 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Product Requirements Document (PRD)
+Title: 10 Nights - Zombie Defense Game
+
+1. Overview
+A survival defense game where the player defends their home from waves of zombies over 10 nights using various weapons. Built with Java Swing in fullscreen mode, featuring a simple weapon purchase system and wave-based zombie attacks.
+
+2. Core Features
+Player System:
+- Stationary player at home position
+- Starts with a basic pistol
+- Can purchase additional weapons using coins
+- Switch between owned weapons using number keys (1, 2, 3, etc.)
+
+Zombie System:
+- All zombies move at the same constant speed
+- Follow a straight line path towards the player/home
+- Basic health system
+- Appear in waves of increasing difficulty
+- Attack the home when they reach it
+
+Weapon/Shop System:
+- Start with basic pistol
+- Additional weapons available for purchase with coins
+- Each weapon has different damage and fire rate
+- Weapon switching using keyboard number keys
+- Shop interface to buy new weapons
+
+3. Technical Implementation
+Core Classes:
+- Main.java: Entry point and fullscreen window setup
+- Game.java: Main game loop and state management
+- GameState.java: Tracks game data (coins, health, wave, weapons owned)
+- Player.java: Player controls and weapon management
+- Zombie.java: Zombie behavior and properties
+- Weapon.java: Weapon properties and mechanics
+- Shop.java: Purchase interface
+
+Data Structures:
+- ArrayList<Zombie>: Track active zombies
+- ArrayList<Weapon>: Owned weapons
+- HashMap<String, Integer>: Weapon prices and stats
+
+4. Development Schedule
+Week 1:
+- Setup fullscreen Java Swing window and game loop
+- Implement player and basic pistol mechanics
+- Create zombie spawning with constant speed movement
+- Add basic UI (health, coins, wave number)
+
+Week 2:
+- Implement coin system and zombie kills
+- Create shop interface for buying weapons
+- Add weapon switching with number keys
+- Implement zombie attack behavior
+
+5. Technical Notes
+- Use Java Swing for fullscreen graphics
+- Traditional game loop with fixed time steps
+- Simple data structures only
+- Thorough code commenting
+- Constant zombie movement speed
+- Weapon switching via number keys
+
+6. Features
+Core Gameplay
+Waves of Zombies: Zombies move toward the home in waves. Each wave increases in difficulty.
+Towers: Players can place and upgrade towers to defend against zombies.
+Home Health: If zombies reach the home, they damage it. The game ends when the home's health reaches zero.
+Zombie AI
+Movement: Zombies move along a predefined path or use a basic pathfinding algorithm.
+Behavior: Zombies will attack towers and the home once they reach it.
+Health: Zombies have health and are destroyed when it reaches zero.
+Shop and Currency System
+Coins: Earned by killing zombies. Used to purchase and upgrade towers.
+Shop: Allows players to buy and upgrade towers with available coins. Towers have varying costs and abilities.
+Tower Upgrades: Players can upgrade towers to improve damage, range, or attack speed.
+
+7. Game Flow
+Start Game: Player starts with a set amount of coins (e.g., 100 coins).
+Zombie Waves: Zombies spawn and move toward the home.
+Place/Upgrade Towers: Player places towers and upgrades them using coins.
+End Wave: Player receives coins based on zombie kills. Proceed to next wave.
+Victory/Defeat: Player survives all 10 waves or loses when home health is reduced to zero.
+
+8. Features Breakdown
+Zombie Movement: Path-following AI or basic pathfinding.
+Combat: Zombies attack towers and the home.
+Wave System: Difficulty increases with each wave.
+Shop: Players can purchase and upgrade towers.
+Coins: Earned for killing zombies, spent on towers.
+
+9. Time Schedule (3 Weeks)
+Week
+Task
+Week 1
+- Setup fullscreen Java Swing window and game loop
+- Implement player and basic pistol mechanics
+- Create zombie spawning with constant speed movement
+- Add basic UI (health, coins, wave number)
+
+Week 2
+- Implement coin system and zombie kills
+- Create shop interface for buying weapons
+- Add weapon switching with number keys
+- Implement zombie attack behavior
+
+Week 3
+- Wave progression: Increase difficulty per wave
+- Polish game mechanics: Balance coins, tower costs, and rewards
+- Add sound effects and visuals: Animations for zombie movement, tower firing
+- Bug fixing and final polishing
+
+10. Future Enhancements (Optional)
+Advanced AI: Implement dynamic pathfinding for zombies.
+Special Towers: Add unique towers with special abilities.
+Power-ups: Add items to buy that temporarily help the player (e.g., bombs, freezes).
+Additional Game Modes: Endless mode or higher difficulty levels.
+
+11. Conclusion
+This document outlines the core mechanics for a tower defense game with a zombie AI, a coin-based system, and a shop for purchasing and upgrading towers. The game progresses through 10 waves, with the difficulty increasing as the player survives longer. The game will be developed over three weeks with a focus on core features first, followed by polishing and balancing.
+
+
+
+let's implement the week one and week two plan, remember the game is names 10 nights and is coded in java. Make sure to ask me any questions if you have any questions. Also only use simple data structures and syntax, like hashmaps, queues, and treemaps. Don't get any more complicated than that without asking me.
